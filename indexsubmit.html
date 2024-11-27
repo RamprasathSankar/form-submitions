@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+   <style>
+        body{
+            overflow:hidden;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'head head'
+            'img main';
+        }
+        .head{
+            grid-area: head;
+        }
+        .img{
+            grid-area:img;
+        }
+        .main{
+            grid-area: main;
+        }
+         .img{
+            position: absolute;
+            left: -100px;
+        }
+        
+        .main{
+            position:absolute;
+            left: 500px;
+            top: 250px;
+            font-size: 30px;
+            text-transform: capitalize;
+            font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+            
+        }
+       .head{
+        overflow: hidden;
+        position: relative;
+        animation-name: head;
+        animation-duration: 25s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       }
+       @keyframes head{
+        0%{left: 1350px;}
+        100%{left: -1000px;}
+       }
+       .content{
+        font-size: 50px;
+                font-family: "Protest Guerrilla", sans-serif;
+                font-style: normal;
+                sup{
+                    font-size: 30px;
+                    color: gray;
+                 } 
+       }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="head">
+       <h2 class="content"> welcome to software<sup>training</sup>institute</h2>
+    </div>
+    <div class="img">
+    <img src="c:\Users\RAM\Documents\HTML\HTML Forms\emoji.webp">
+</div> 
+<div class="main">
+    <h1>you will joined successfully!!</h1>
+</div>
+</div>
+</body>
+</html>
